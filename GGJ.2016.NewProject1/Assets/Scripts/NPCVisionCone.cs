@@ -15,6 +15,6 @@ public class NPCVisionCone : MonoBehaviour {
 
 		}
 
-		Debug.Log(col.name);
+		//Debug.Log(col.name);
 	}
 }

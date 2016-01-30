@@ -15,22 +15,26 @@ public class NPCTarget : MonoBehaviour {
 
 	void Start()
 	{
-
+		GetComponent<SpriteRenderer>().enabled = false;
 		parentTargetPoints = GetComponentInParent<NPCTargetPoints>();
 
 	}
 
 
-	void OnTriggerEnter2D(Collider2D col)
+	void OnTriggerStay2D(Collider2D col)
 	{
 		NPC npc = col.gameObject.GetComponent<NPC>();
 
 		if(npc)
 		{
-			if(gameObject.name == parentTargetPoints.GetCurrentNPCTarget().name)
+			if(npc.arrivedToTarget)
 			{
-				parentTargetPoints.moveCurrentPoint();
-				Debug.Log(npc.name + "a Siguiente punto" );
+				if(gameObject.name == parentTargetPoints.GetCurrentNPCTarget().name)
+				{
+					parentTargetPoints.moveCurrentPoint();
+					//Debug.Log(npc.name + "a Siguiente punto" );
+					npc.arrivedToTarget = false;
+				}
 			}
 		}
 	}

@@ -23,6 +23,7 @@ public class NPC : MonoBehaviour {
 
 	public NPCTargetPoints posicionesObjetivo;
 	public Hash.LocationNames myLocation;
+	public bool arrivedToTarget;
 
 	//Campo de visión del NPC 
 	//TODO: Añadir Atributo RequiredComponent
@@ -63,9 +64,11 @@ public class NPC : MonoBehaviour {
 	
 			NPCTarget posicionObjetivo = posicionesObjetivo.GetCurrentNPCTarget();
 
+			//Si encuentra una posición de objetivo
 			if(posicionObjetivo)
 			{
 
+				//Voltea a ver la posicion de objetivo
 				if(posicionObjetivo.transform.position.x > transform.position.x) 
 					currentlyLooking = LookingDirection.Right;
 				else 
@@ -73,18 +76,24 @@ public class NPC : MonoBehaviour {
 
 				SwitchFaces();
 
-				transform.position = Vector2.Lerp(transform.position, posicionObjetivo.transform.position, Time.deltaTime * NPCspeed);
+				if(!distracted)
+				{
+					transform.position = Vector2.Lerp(transform.position, posicionObjetivo.transform.position, Time.deltaTime * NPCspeed);
 
 					Vector3 distancia = posicionObjetivo.transform.position - transform.position;
 
 					if(distancia.magnitude < 0.01f)
 					{
 						transform.position = posicionObjetivo.transform.position;
+						arrivedToTarget = true;
+						distracted = posicionObjetivo.IsDistractor;
+						timeToDistract = posicionObjetivo.DistractorTime;
 					}
-
-				if(distracted)
+					visionFieldBoxCollider2D.enabled = true;
+				}
+				else 
 				{
-					if(timeSinceDistracted < timeToDistract && distracted)
+					if(timeSinceDistracted < timeToDistract)
 					{
 						timeSinceDistracted += Time.deltaTime;
 						visionFieldBoxCollider2D.enabled = false;
@@ -92,10 +101,10 @@ public class NPC : MonoBehaviour {
 					else
 					{
 						distracted = false;
-						visionFieldBoxCollider2D.enabled = true;
+						timeSinceDistracted = 0.0f;
+						timeToDistract = 0.0f;
 					}
 				}
-
 
 			}
 
@@ -116,6 +125,14 @@ public class NPC : MonoBehaviour {
 			}
 	}
 
+
+	void FixedUpdate()
+	{
+		
+
+	}
+
+
 	void SwitchFaces()
 	{
 		if(currentlyLooking == LookingDirection.Right) 
@@ -131,20 +148,5 @@ public class NPC : MonoBehaviour {
 	}
 
 
-	void OnTriggerEnter2D(Collider2D col)
-	{
-
-		NPCTarget npcTarget = col.gameObject.GetComponent<NPCTarget>();
-		
-		if(npcTarget)
-		{
-			if(npcTarget.IsDistractor)
-			{
-				distracted = true;
-				timeSinceDistracted = 0.0f;
-				timeToDistract = npcTarget.DistractorTime;
-			}
-		}
-	}
 
 }
