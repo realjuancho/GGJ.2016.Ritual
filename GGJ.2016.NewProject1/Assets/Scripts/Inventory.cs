@@ -34,7 +34,7 @@ public class Inventory : MonoBehaviour {
 	public static bool removeItem (Item item) {
 		foreach (Item slot in inventory){
 			if (slot.id == item.id) {
-				inventory.RemoveAt(slot);
+				//inventory.RemoveAt(slot);
 				return true;
 			}
 		}
@@ -65,7 +65,7 @@ public class Inventory : MonoBehaviour {
 	public static void displayInventory(){
 		Debug.Log("----Inventory----\n");
 		foreach (Item slot in inventory){
-			Debug.Log("Item : " + slot.id + " Amount: " + slot.amount + "\n");
+			//Debug.Log("Item : " + slot.id + " Amount: " + slot.amount + "\n");
 		}
 		Debug.Log("-----------------\n");
 	}
