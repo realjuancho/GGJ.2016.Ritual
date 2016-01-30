@@ -95,11 +95,7 @@ public class NPC : MonoBehaviour {
 						visionFieldBoxCollider2D.enabled = true;
 					}
 				}
-				else
-				{
-					
 
-				}
 
 			}
 
