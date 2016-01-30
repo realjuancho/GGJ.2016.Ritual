@@ -1,0 +1,206 @@
+fileFormatVersion: 2
+guid: 353ccafb20da94633a623f4b772e0467
+timeCreated: 1454185201
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: AGUELAEspaldas_0
+    21300002: AGUELAEspaldas_1
+    21300004: AGUELAEspaldas_2
+    21300006: AGUELAEspaldas_3
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: AGUELAEspaldas_0
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 313
+        width: 136
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 68, y: 47.5}
+        - {x: 55, y: 67.5}
+        - {x: -36, y: 67.5}
+        - {x: -68, y: 48.5}
+        - {x: -68, y: -39.5}
+        - {x: -66, y: -44.5}
+        - {x: -30, y: -67.5}
+        - {x: 24, y: -67.5}
+        - {x: 43, y: -58.5}
+        - {x: 67, y: -35.5}
+        - {x: 68, y: -31.5}
+    - name: AGUELAEspaldas_1
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 108
+        width: 255
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 127.5, y: -39.5}
+        - {x: 127.5, y: 37.5}
+        - {x: 106.5, y: 79.5}
+        - {x: 84.5, y: 100.5}
+        - {x: 57.5, y: 120.5}
+        - {x: 28.5, y: 127.5}
+        - {x: -31.5, y: 127.5}
+        - {x: -62.5, y: 117.5}
+        - {x: -101.5, y: 84.5}
+        - {x: -123.5, y: 45.5}
+        - {x: -127.5, y: 32.5}
+        - {x: -127.5, y: -40.5}
+        - {x: -105.5, y: -80.5}
+        - {x: -84.5, y: -101.5}
+        - {x: -48.5, y: -123.5}
+        - {x: -33.5, y: -127.5}
+        - {x: 30.5, y: -127.5}
+        - {x: 51.5, y: -121.5}
+        - {x: 78.5, y: -109.5}
+        - {x: 115.5, y: -68.5}
+    - name: AGUELAEspaldas_2
+      rect:
+        serializedVersion: 2
+        x: 826
+        y: 24
+        width: 348
+        height: 416
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 102, y: -190}
+        - {x: 113, y: -175}
+        - {x: 125, y: -188}
+        - {x: 148, y: -191}
+        - {x: 161, y: -185}
+        - {x: 174, y: -166}
+        - {x: 174, y: -146}
+        - {x: 151, y: -144}
+        - {x: 146, y: -107}
+        - {x: 163, y: -52}
+        - {x: 170, y: -18}
+        - {x: 171, y: 22}
+        - {x: 165, y: 69}
+        - {x: 156, y: 95}
+        - {x: 144, y: 121}
+        - {x: 121, y: 157}
+        - {x: 77, y: 195}
+        - {x: 41, y: 208}
+        - {x: -27, y: 208}
+        - {x: -51, y: 202}
+        - {x: -80, y: 185}
+        - {x: -108, y: 161}
+        - {x: -134, y: 124}
+        - {x: -150, y: 91}
+        - {x: -161, y: 48}
+        - {x: -163, y: -24}
+        - {x: -147, y: -89}
+        - {x: -144, y: -131}
+        - {x: -148, y: -151}
+        - {x: -174, y: -168}
+        - {x: -174, y: -187}
+        - {x: -155, y: -203}
+        - {x: -142, y: -207}
+        - {x: -122, y: -205}
+        - {x: -109, y: -198}
+        - {x: -88, y: -174}
+        - {x: -70, y: -194}
+        - {x: -53, y: -208}
+        - {x: -20, y: -208}
+        - {x: -8, y: -198}
+        - {x: 12, y: -208}
+        - {x: 47, y: -208}
+        - {x: 58, y: -202}
+        - {x: 72, y: -186}
+        - {x: 81, y: -193}
+    - name: AGUELAEspaldas_3
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 13
+        width: 254
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 114, y: -69.5}
+        - {x: 127, y: -35.5}
+        - {x: 127, y: 30.5}
+        - {x: 122, y: 47.5}
+        - {x: 105, y: 78.5}
+        - {x: 73, y: 109.5}
+        - {x: 46, y: 122.5}
+        - {x: 13, y: 128.5}
+        - {x: -77, y: 128.5}
+        - {x: -96, y: 118.5}
+        - {x: -121, y: 87.5}
+        - {x: -127, y: 36.5}
+        - {x: -127, y: -36.5}
+        - {x: -113, y: -72.5}
+        - {x: -105, y: -82.5}
+        - {x: -68, y: -116.5}
+        - {x: -35, y: -128.5}
+        - {x: 30, y: -128.5}
+        - {x: 51, y: -122.5}
+        - {x: 76, y: -108.5}
+        - {x: 100, y: -86.5}
+    outline:
+    - - {x: 0, y: 0}
+      - {x: 0, y: 458}
+      - {x: 800, y: 458}
+      - {x: 800, y: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

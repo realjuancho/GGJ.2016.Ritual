@@ -1,0 +1,168 @@
+fileFormatVersion: 2
+guid: df395160b6d7547f0b76ac0b26526ea6
+timeCreated: 1454178172
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: AGUELAenPartes_0
+    21300002: AGUELAenPartes_1
+    21300004: AGUELAenPartes_2
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: AGUELAenPartes_0
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 119
+        width: 255
+        height: 316
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 127.5, y: -66}
+        - {x: 127.5, y: -1}
+        - {x: 112.5, y: 54}
+        - {x: 120.5, y: 79}
+        - {x: 121.5, y: 111}
+        - {x: 89.5, y: 158}
+        - {x: 19.5, y: 158}
+        - {x: -12.5, y: 138}
+        - {x: -35.5, y: 99}
+        - {x: -78.5, y: 76}
+        - {x: -110.5, y: 45}
+        - {x: -127.5, y: 4}
+        - {x: -127.5, y: -60}
+        - {x: -119.5, y: -85}
+        - {x: -100.5, y: -116}
+        - {x: -71.5, y: -145}
+        - {x: -33.5, y: -158}
+        - {x: 27.5, y: -158}
+        - {x: 52.5, y: -152}
+        - {x: 81.5, y: -136}
+        - {x: 117.5, y: -94}
+    - name: AGUELAenPartes_1
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 58
+        width: 95
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -28.5, y: 46.5}
+        - {x: -47.5, y: 36.5}
+        - {x: -47.5, y: -25.5}
+        - {x: -23.5, y: -46.5}
+        - {x: 47.5, y: -46.5}
+        - {x: 47.5, y: 46.5}
+    - name: AGUELAenPartes_2
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 14
+        width: 349
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 131.5, y: -190.5}
+        - {x: 147.5, y: -191.5}
+        - {x: 170.5, y: -174.5}
+        - {x: 174.5, y: -163.5}
+        - {x: 174.5, y: -144.5}
+        - {x: 146.5, y: -136.5}
+        - {x: 147.5, y: -102.5}
+        - {x: 157.5, y: -72.5}
+        - {x: 163.5, y: -52.5}
+        - {x: 168.5, y: -27.5}
+        - {x: 170.5, y: 24.5}
+        - {x: 167.5, y: 56.5}
+        - {x: 155.5, y: 95.5}
+        - {x: 142.5, y: 121.5}
+        - {x: 132.5, y: 139.5}
+        - {x: 101.5, y: 175.5}
+        - {x: 87.5, y: 187.5}
+        - {x: 45.5, y: 207.5}
+        - {x: 40.5, y: 208.5}
+        - {x: -27.5, y: 208.5}
+        - {x: -48.5, y: 201.5}
+        - {x: -78.5, y: 186.5}
+        - {x: -112.5, y: 155.5}
+        - {x: -133.5, y: 125.5}
+        - {x: -149.5, y: 93.5}
+        - {x: -160.5, y: 52.5}
+        - {x: -164.5, y: -10.5}
+        - {x: -145.5, y: -102.5}
+        - {x: -159.5, y: -167.5}
+        - {x: -174.5, y: -166.5}
+        - {x: -174.5, y: -188.5}
+        - {x: -173.5, y: -193.5}
+        - {x: -147.5, y: -208.5}
+        - {x: -135.5, y: -208.5}
+        - {x: -110.5, y: -201.5}
+        - {x: -84.5, y: -172.5}
+        - {x: -69.5, y: -193.5}
+        - {x: -60.5, y: -205.5}
+        - {x: -40.5, y: -208.5}
+        - {x: -23.5, y: -208.5}
+        - {x: -17.5, y: -205.5}
+        - {x: -14.5, y: -202.5}
+        - {x: 11.5, y: -207.5}
+        - {x: 14.5, y: -208.5}
+        - {x: 45.5, y: -208.5}
+        - {x: 60.5, y: -199.5}
+        - {x: 100.5, y: -189.5}
+        - {x: 112.5, y: -175.5}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
