@@ -28,6 +28,8 @@ public class ItemType : MonoBehaviour {
 			{
 				inventory.AddToInventory(itemType);
 
+				//TODO:
+				//AudioSource.PlayClipAtPoint("", Vector3.zero);
 				Destroy(gameObject);
 			}
 		}

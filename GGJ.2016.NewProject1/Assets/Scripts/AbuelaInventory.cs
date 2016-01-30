@@ -29,7 +29,10 @@ public class AbuelaInventory : MonoBehaviour
 
 	public void AddToInventory(Hash.ItemTypes myItemType)
 	{
-		heldItems.Add(new InventoryItems( myItemType.ToString(), myItemType ));
+		if(heldItems.Count < 4)
+		{
+			heldItems.Add(new InventoryItems( myItemType.ToString(), myItemType ));
+		}
 	}
 
 	public void RemoveFromInventory(Hash.ItemTypes myItemType)

@@ -5,7 +5,7 @@ public class Hash : MonoBehaviour {
 
 	public enum LocationNames { Sala, Cocina, Dormitorio, Baño, Patio, InterUp, InterDown }; 
 	public enum ItemTypes { 
-
+			Vacio,
 			Vaso,
 			Cafetera,
 			LlaveDeBano,
@@ -28,9 +28,10 @@ public class Hash : MonoBehaviour {
 			Albahaca,
 			Huevo,
 			TV
-
 	   } ;
 
+	public enum ButtonOption { ButtonA, ButtonB, ButtonC, ButtonD } 
+	 
 	public static class AnimationParameters
 	{
 		public static string switchMenu = "switchMenu";
