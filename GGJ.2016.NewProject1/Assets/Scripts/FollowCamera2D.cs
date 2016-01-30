@@ -23,7 +23,7 @@ public class FollowCamera2D : MonoBehaviour {
 
 		if(abuelaTarget)
 		{
-			Debug.Log(abuelaTarget.location);
+			//Debug.Log(abuelaTarget.location);
 
 			foreach(CameraPosition camPos in cameraPositions)
 			{

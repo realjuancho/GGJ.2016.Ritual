@@ -5,10 +5,13 @@ public class Abuela : MonoBehaviour {
 
 	public Hash.LocationNames location;
 
+	public Inventory inventory;
 
 	// Use this for initialization
-	void Start () {
-	
+	void Awake () {
+
+		gameObject.AddComponent<Inventory>();
+
 	}
 	
 	// Update is called once per frame
@@ -25,10 +28,7 @@ public class Abuela : MonoBehaviour {
 		{
 			Debug.Log("Abuela esta en: " + col.name);
 			location = camPos.camLocation;
-
 		}
-			
-
 	}
 
 }
