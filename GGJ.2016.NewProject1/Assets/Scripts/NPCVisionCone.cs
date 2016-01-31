@@ -4,15 +4,14 @@ using System.Collections;
 public class NPCVisionCone : MonoBehaviour {
 
 
-	public bool grandmaFound = false;
 
 	void OnTriggerEnter2D(Collider2D col)
 	{
 		//TODO
-		if(col.gameObject.tag == Hash.Tags.Player)
+		if(col.gameObject.tag == Hash.Tags.Player || col.gameObject.GetComponent<Abuela>())
 		{
-			grandmaFound = true;
-
+			
+			gameObject.GetComponentInParent<NPC>().grandmaFound = true;
 		}
 
 		//Debug.Log(col.name);

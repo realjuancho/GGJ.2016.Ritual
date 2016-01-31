@@ -10,14 +10,39 @@ public class GameController : MonoBehaviour {
 	public NPC[] NPCsInScene;
 	public ObjectiveChecker[] ObjectiveCheckers;
 
+
+
+		TryAgainPanel tryAgainPanel;
+
 	void Start()
 	{
 		NPCsInScene = GameObject.FindObjectsOfType<NPC>();
 		ObjectiveCheckers = GameObject.FindObjectsOfType<ObjectiveChecker>();
+		tryAgainPanel  = GameObject.FindObjectOfType<TryAgainPanel>();
+		tryAgainPanel.gameObject.SetActive(false);
 	}
 
 	void Update()
 	{
+		CheckSeenByNPC();
+
+
+		if(seenbyNPC)
+		{
+
+			ShowTryAgainPanel();
+
+		}
+
+
+
+		CheckObjectives();
+
+
+	}
+
+	void CheckSeenByNPC(){
+
 		if(!seenbyNPC)
 		{
 			bool tmpSeenByNPC = false;
@@ -33,6 +58,10 @@ public class GameController : MonoBehaviour {
 			seenbyNPC = tmpSeenByNPC;
 		}
 
+	}
+
+	void CheckObjectives()
+	{
 		if(!allObjectivesDone)
 		{
 			bool tmpAllObjectivesDone = true;
@@ -50,4 +79,13 @@ public class GameController : MonoBehaviour {
 
 	}
 
+	void ShowTryAgainPanel()
+	{
+
+		tryAgainPanel.gameObject.SetActive(true);
+		Animator animatorController =  tryAgainPanel.GetComponent<Animator>();
+		animatorController.SetTrigger(Hash.AnimationParameters.tryAgainPanelShow);
+
+
+	}
 }

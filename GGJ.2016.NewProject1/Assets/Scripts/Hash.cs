@@ -38,6 +38,8 @@ public class Hash : MonoBehaviour {
 		public static string switchMenu = "switchMenu";
 
 		public static string pressStart = "PressStart";
+
+		public static string tryAgainPanelShow = "TryAgainPanelShow";
 	}
 
 	public static class Tags

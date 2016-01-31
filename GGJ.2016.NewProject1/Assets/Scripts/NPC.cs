@@ -130,10 +130,9 @@ public class NPC : MonoBehaviour {
 	}
 
 
-	void FixedUpdate()
+	public void SetGrandmaFound()
 	{
 		
-
 	}
 
 
