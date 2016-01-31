@@ -15,7 +15,7 @@ public class NPCTarget : MonoBehaviour {
 
 	void Start()
 	{
-		GetComponent<SpriteRenderer>().enabled = false;
+		if(GetComponent<SpriteRenderer>()) GetComponent<SpriteRenderer>().enabled = false;
 		parentTargetPoints = GetComponentInParent<NPCTargetPoints>();
 
 	}

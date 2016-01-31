@@ -7,6 +7,7 @@ public class Hash : MonoBehaviour {
 	public enum ItemTypes { 
 			Vacio,
 			Vaso,
+			Agua,
 			Cafetera,
 			LlaveDeBano,
 			SwitchDeLuz,
@@ -35,6 +36,8 @@ public class Hash : MonoBehaviour {
 	public static class AnimationParameters
 	{
 		public static string switchMenu = "switchMenu";
+
+		public static string pressStart = "PressStart";
 	}
 
 	public static class Tags
@@ -46,8 +49,6 @@ public class Hash : MonoBehaviour {
 	{
 		public static string Player = "VisionCone";
 	}
-
-
 
 
 }
