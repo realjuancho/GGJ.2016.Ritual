@@ -7,8 +7,9 @@ public class Abuela : MonoBehaviour {
 
 
 	// Use this for initialization
-	void Start () {
-	
+	void Awake () {
+
+
 	}
 	
 	// Update is called once per frame
@@ -25,10 +26,7 @@ public class Abuela : MonoBehaviour {
 		{
 			Debug.Log("Abuela esta en: " + col.name);
 			location = camPos.camLocation;
-
 		}
-			
-
 	}
 
 }

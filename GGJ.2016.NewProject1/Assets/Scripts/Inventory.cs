@@ -6,8 +6,10 @@ using System.Collections.Generic;
 public class Item {
 	public int id;
 
+
 	public Item(int itemID){
 		id = itemID;
+
 	}
 
 }
@@ -34,7 +36,7 @@ public class Inventory : MonoBehaviour {
 	public static bool removeItem (Item item) {
 		foreach (Item slot in inventory){
 			if (slot.id == item.id) {
-				//inventory.RemoveAt(slot);
+				inventory.RemoveAt(slot.id);
 				return true;
 			}
 		}
@@ -58,6 +60,7 @@ public class Inventory : MonoBehaviour {
 	public static Sprite getIcon(int itemID){
 		return icons[itemID];
 	}
+
 
 
 	/*----------------------DEBUG------------------*/

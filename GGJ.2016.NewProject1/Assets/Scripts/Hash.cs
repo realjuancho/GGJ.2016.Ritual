@@ -4,6 +4,38 @@ using System.Collections;
 public class Hash : MonoBehaviour {
 
 	public enum LocationNames { Sala, Cocina, Dormitorio, Baño, Patio, InterUp, InterDown }; 
+	public enum ItemTypes { 
+			Vacio,
+			Vaso,
+			Cafetera,
+			LlaveDeBano,
+			SwitchDeLuz,
+			Frasco,
+			Ventana,
+			Mariposa,
+			Balon,
+			Cuchillo,
+			Vela,
+			Chancla,
+			CajaCerillos,
+			Columpio,
+			Bugambilia,
+			Gordolobo,
+			CanelaLimon,
+			PuertaRefri,
+			Taza,
+			Tetera,
+			Albahaca,
+			Huevo,
+			TV
+	   } ;
+
+	public enum ButtonOption { ButtonA, ButtonB, ButtonC, ButtonD } 
+	 
+	public static class AnimationParameters
+	{
+		public static string switchMenu = "switchMenu";
+	}
 
 	public static class Tags
 	{
@@ -14,6 +46,8 @@ public class Hash : MonoBehaviour {
 	{
 		public static string Player = "VisionCone";
 	}
+
+
 
 
 }
