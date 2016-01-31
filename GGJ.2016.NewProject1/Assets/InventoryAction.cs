@@ -4,32 +4,40 @@ using UnityEngine.UI;
 
 public class InventoryAction : MonoBehaviour {
 
-	public Sprite SourceImage;
+	public Hash.ButtonOption buttonOption;
+	public Image SourceImage;
 	public AbuelaInventory inventario;
-	public ItemLibrary itemLibrary;
-	public ItemImage[] itemImageLibrary;
 
 	// Use this for initialization
 	void Start () {
 		
 		inventario = GameObject.FindObjectOfType<AbuelaInventory>();
-		itemLibrary = GameObject.FindObjectOfType<ItemLibrary>();
-		itemImageLibrary = itemLibrary.imageLibrary;
-		SourceImage = GetComponent<Image>().sprite;
+		SourceImage = GetComponent<Image>();
 	}
 
 
 	// Update is called once per frame
 	void Update () {
 
-
-		foreach(InventoryItems item in inventario.heldItems)
+		
+		switch(buttonOption)
 		{
-			foreach(ItemImage it in itemImageLibrary)
-			{
-				if(it.itemType == item.itemType)
-					SourceImage = it.itemImage;
-			}
+			case Hash.ButtonOption.ButtonA:
+			if(inventario.heldItems.Count > 0) SourceImage.sprite = inventario.heldItems[0].spriteImage;
+				break;
+			case Hash.ButtonOption.ButtonB:
+			if(inventario.heldItems.Count > 1) SourceImage.sprite = inventario.heldItems[1].spriteImage;
+				break;
+			case Hash.ButtonOption.ButtonC:
+			if(inventario.heldItems.Count > 2) SourceImage.sprite = inventario.heldItems[2].spriteImage;
+				break;
+			case Hash.ButtonOption.ButtonD:
+			if(inventario.heldItems.Count > 3) SourceImage.sprite = inventario.heldItems[3].spriteImage;
+				break;
+
 		}
+		
+			
+		
 	}
 }

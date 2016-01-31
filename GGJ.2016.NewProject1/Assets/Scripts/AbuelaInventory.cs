@@ -27,11 +27,18 @@ public class AbuelaInventory : MonoBehaviour
 
 	}
 
-	public void AddToInventory(Hash.ItemTypes myItemType)
+	public bool AddToInventory(Hash.ItemTypes myItemType, Sprite mySprite)
 	{
 		if(heldItems.Count < 4)
 		{
-			heldItems.Add(new InventoryItems( myItemType.ToString(), myItemType ));
+			InventoryItems item = new InventoryItems( myItemType.ToString(), myItemType);
+			item.spriteImage = mySprite;
+			heldItems.Add(item);
+			return true;
+		}
+		else
+		{
+			return false;
 		}
 	}
 
@@ -65,10 +72,14 @@ public class InventoryItems
 	[SerializeField]
 	public bool isUsable = false;
 
+	[SerializeField]
+	public Sprite spriteImage;
+
 	public InventoryItems(string myName, Hash.ItemTypes myItemType)
 	{
 		name = myName;
 		itemType = myItemType;
+
 	}
 
 	public void EnableUsable()

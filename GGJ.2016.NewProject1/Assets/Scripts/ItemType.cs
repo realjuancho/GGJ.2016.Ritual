@@ -5,9 +5,10 @@ public class ItemType : MonoBehaviour {
 
 
 	public Hash.ItemTypes itemType;
-
 	public bool isPickUpable;
 	public bool isThrowable;
+	public Sprite imageSprite;
+	public AudioClip audioClipEffect;
 
 	void Throw(){
 
@@ -26,11 +27,15 @@ public class ItemType : MonoBehaviour {
 
 			if(isPickUpable)
 			{
-				inventory.AddToInventory(itemType);
+				bool b = inventory.AddToInventory(itemType, imageSprite);
 
 				//TODO:
-				//AudioSource.PlayClipAtPoint("", Vector3.zero);
-				Destroy(gameObject);
+
+				if (b)
+				{
+					AudioSource.PlayClipAtPoint(audioClipEffect , Vector3.zero); 
+					Destroy(gameObject);
+				}
 			}
 		}
 	}

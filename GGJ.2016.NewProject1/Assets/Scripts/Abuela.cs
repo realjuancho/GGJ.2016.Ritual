@@ -5,12 +5,10 @@ public class Abuela : MonoBehaviour {
 
 	public Hash.LocationNames location;
 
-	public Inventory inventory;
 
 	// Use this for initialization
 	void Awake () {
 
-		gameObject.AddComponent<Inventory>();
 
 	}
 	
