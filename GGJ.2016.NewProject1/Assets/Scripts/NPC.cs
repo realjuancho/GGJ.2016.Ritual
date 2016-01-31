@@ -147,7 +147,6 @@ public class NPC : MonoBehaviour {
 					
 	}
 	void SwitchFaceTo(bool right) {
-		Vector3 scale = sprite.transform.localScale;
 		if (right) {
 			spriteRenderer.flipX = !flipX;
 			visionFieldBoxCollider2D.offset = new Vector2 (visionFieldOffsetX * -1, 0);
