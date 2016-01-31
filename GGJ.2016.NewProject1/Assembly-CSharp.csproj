@@ -50,6 +50,7 @@
      <Compile Include="Assets\ItemLibrary.cs" />
      <Compile Include="Assets\Scripts\Abuela.cs" />
      <Compile Include="Assets\Scripts\AbuelaInventory.cs" />
+     <Compile Include="Assets\Scripts\Autotype.cs" />
      <Compile Include="Assets\Scripts\Camera2DFollow.cs" />
      <Compile Include="Assets\Scripts\CameraFollow.cs" />
      <Compile Include="Assets\Scripts\CameraPosition.cs" />
