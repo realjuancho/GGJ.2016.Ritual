@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/_scenes/GameMissions/ChanclaScene.unity
+=======
+- path: Assets/_scenes/GameMissions/EspantarLaLluvia.unity
+>>>>>>> 7217e68a651d3eb13a7f8d425e69a858ccd7a775
   isLoaded: 1
   isActive: 1
