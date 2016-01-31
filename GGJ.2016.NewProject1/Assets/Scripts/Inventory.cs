@@ -60,18 +60,5 @@ public class Inventory : MonoBehaviour {
 	public static Sprite getIcon(int itemID){
 		return icons[itemID];
 	}
-
-
-
-	/*----------------------DEBUG------------------*/
-
-	public static void displayInventory(){
-		Debug.Log("----Inventory----\n");
-		foreach (Item slot in inventory){
-			//Debug.Log("Item : " + slot.id + " Amount: " + slot.amount + "\n");
-		}
-		Debug.Log("-----------------\n");
-	}
-
-	/*----------------------END------------------*/
+		
 }
