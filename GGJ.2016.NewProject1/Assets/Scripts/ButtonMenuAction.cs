@@ -26,7 +26,7 @@ public class ButtonMenuAction : MonoBehaviour {
 
 	public void StartGame()
 	{
-		SceneManager.LoadScene("Scene1");
+		SceneManager.LoadScene(1);
 
 	}
 

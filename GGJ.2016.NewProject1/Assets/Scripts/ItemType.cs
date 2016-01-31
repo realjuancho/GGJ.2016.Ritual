@@ -37,12 +37,17 @@ public class ItemType : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D col) {
 
+		
 		Abuela abuela =  col.GetComponent<Abuela>();
-		inventory = abuela.GetComponentInChildren<AbuelaInventory>();
-		if (abuela) {
-			collidingWithAbuela = true;
-		} else {
-			collidingWithAbuela = false;
+		if(abuela)
+		{
+			inventory = abuela.GetComponentInChildren<AbuelaInventory>();
+			if (abuela) {
+				collidingWithAbuela = true;
+			} else {
+				collidingWithAbuela = false;
+			}
 		}
 	}
+
 }
