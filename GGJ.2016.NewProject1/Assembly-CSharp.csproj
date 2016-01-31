@@ -45,6 +45,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\CanvasFader.cs" />
      <Compile Include="Assets\InventoryAction.cs" />
      <Compile Include="Assets\ItemLibrary.cs" />
      <Compile Include="Assets\Scripts\Abuela.cs" />

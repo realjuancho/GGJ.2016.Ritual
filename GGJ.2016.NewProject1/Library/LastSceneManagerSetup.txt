@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/_scenes/scene1_backup.unity
+- path: Assets/_scenes/Prueba.unity
   isLoaded: 1
   isActive: 1
