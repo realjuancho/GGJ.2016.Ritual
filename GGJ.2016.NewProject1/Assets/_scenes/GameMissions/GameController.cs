@@ -100,6 +100,5 @@ public class GameController : MonoBehaviour {
 		successPanel.gameObject.SetActive(true);
 		Animator animatorController =  successPanel.GetComponent<Animator>();
 		animatorController.SetTrigger(Hash.AnimationParameters.successPanelShow);
-
 	}
 }

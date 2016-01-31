@@ -1,10 +1,9 @@
 fileFormatVersion: 2
-guid: 0ae65f3b030362547803cbd926b1b24c
-timeCreated: 1454210527
+guid: 4e701a094bca56142b80b5cef421596c
+timeCreated: 1454264166
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: mariposa_0
+  fileIDToRecycleName: {}
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -45,23 +44,12 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 10
+  spritePixelsToUnits: 100
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites:
-    - name: mariposa_0
-      rect:
-        serializedVersion: 2
-        x: 137
-        y: 181
-        width: 27
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+    sprites: []
     outline: []
   spritePackingTag: 
   userData: 
