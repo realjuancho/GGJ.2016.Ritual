@@ -24,13 +24,10 @@ public class ItemType : MonoBehaviour {
 		{
 			AbuelaInventory inventory = abuela.GetComponentInChildren<AbuelaInventory>();
 			//Debug.Log(inventario.name);
-
 			if(isPickUpable)
 			{
 				bool b = inventory.AddToInventory(itemType, imageSprite);
-
 				//TODO:
-
 				if (b)
 				{
 					AudioSource.PlayClipAtPoint(audioClipEffect , Vector3.zero); 

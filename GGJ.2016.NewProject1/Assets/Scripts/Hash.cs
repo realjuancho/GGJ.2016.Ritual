@@ -7,6 +7,7 @@ public class Hash : MonoBehaviour {
 	public enum ItemTypes { 
 			Vacio,
 			Vaso,
+			Agua,
 			Cafetera,
 			LlaveDeBano,
 			SwitchDeLuz,
