@@ -14,6 +14,7 @@ public class Item {
 
 }
 
+[RequireComponent(typeof(AudioSource))]
 public class Inventory : MonoBehaviour {
 
 	public string[] itemNames;
@@ -23,14 +24,18 @@ public class Inventory : MonoBehaviour {
 	public static Sprite[] icons;
 	public static List<Item> inventory;
 
+	public static AudioSource audio;
+
 	void Start () {
 		names = itemNames;
 		icons = itemIcons;
 		inventory = new List<Item>();
+		audio = GetComponent<AudioSource>();
 	}
 
 	public static void addItem (Item item) {
 		inventory.Add(item);
+		audio.PlayOneShot(audio.clip, 1.0F);
 	}
 
 	public static bool removeItem (Item item) {

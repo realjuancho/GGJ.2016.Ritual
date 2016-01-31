@@ -1,15 +1,15 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Portal.cs">
+<<<<<<< HEAD
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Autotype.cs">
     <Files>
-      <File FileName="Assets\Scripts\ObjectiveChecker.cs" Line="1" Column="1" />
-      <File FileName="Assets\_scenes\GameMissions\GameController.cs" Line="1" Column="1" />
-      <File FileName="Assets\SuccessPanel.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\ItemType.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Portal.cs" Line="16" Column="86" />
-      <File FileName="Assets\Scripts\ButtonMenuAction.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Autotype.cs" Line="30" Column="2" />
+      <File FileName="Assets/Scripts/ItemType.cs" Line="18" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
+=======
+  <MonoDevelop.Ide.Workbench />
+>>>>>>> 7217e68a651d3eb13a7f8d425e69a858ccd7a775
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="C:\Users\Public\Documents\GitHub Local Repository\GGJ.2016.NewProject1\Assets\Scripts\Portal.cs" line="16" column="88" />
