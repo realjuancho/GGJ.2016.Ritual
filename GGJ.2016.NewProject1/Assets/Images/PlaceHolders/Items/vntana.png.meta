@@ -1,9 +1,10 @@
 fileFormatVersion: 2
 guid: d5abc737ace087c43b4c3b6aed10c4e2
-timeCreated: 1454202327
+timeCreated: 1454210994
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: vntana_0
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -30,26 +31,44 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
-    wrapMode: -1
-  nPOTScale: 1
+    wrapMode: 1
+  nPOTScale: 0
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 100
-  alphaIsTransparency: 0
-  textureType: -1
+  spritePixelsToUnits: 10
+  alphaIsTransparency: 1
+  textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: vntana_0
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 12
+        width: 58
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -29, y: 78}
+        - {x: -29, y: -116}
+        - {x: 23, y: -116}
+        - {x: 29, y: -72}
+        - {x: 29, y: 116}
+        - {x: 9, y: 116}
+        - {x: -5, y: 105}
     outline: []
   spritePackingTag: 
   userData: 
