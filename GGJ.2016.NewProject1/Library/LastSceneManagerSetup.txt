@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/_scenes/GameMissions/WaterNextToBed_Scene.unity
+- path: Assets/_scenes/GameMissions/EspantarLaLluvia.unity
   isLoaded: 1
   isActive: 1
