@@ -1,13 +1,13 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\ButtonMenuAction.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Portal.cs">
     <Files>
-      <File FileName="Assets\_scenes\GameMissions\GameController.cs" Line="85" Column="20" />
-      <File FileName="Assets\SuccessPanel.cs" Line="18" Column="3" />
-      <File FileName="Assets\Scripts\ObjectiveChecker.cs" Line="39" Column="1" />
-      <File FileName="Assets\Scripts\ItemType.cs" Line="49" Column="5" />
-      <File FileName="Assets\Scripts\Portal.cs" Line="16" Column="88" />
-      <File FileName="Assets\Scripts\ButtonMenuAction.cs" Line="29" Column="27" />
+      <File FileName="Assets\Scripts\ObjectiveChecker.cs" Line="1" Column="1" />
+      <File FileName="Assets\_scenes\GameMissions\GameController.cs" Line="1" Column="1" />
+      <File FileName="Assets\SuccessPanel.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\ItemType.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Portal.cs" Line="16" Column="86" />
+      <File FileName="Assets\Scripts\ButtonMenuAction.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
