@@ -36,17 +36,20 @@ public class ObjectiveChecker : MonoBehaviour {
 	{
 
 		Abuela abuela =  col.gameObject.GetComponent<Abuela>();
-		AbuelaInventory inventario = abuela.GetComponentInChildren<AbuelaInventory>();
-
-		if(inventario)
+		if(abuela)
 		{
-			foreach(ItemsChecklist neededItem in itemsToCheck)
+			AbuelaInventory inventario = abuela.GetComponentInChildren<AbuelaInventory>();
+
+			if(inventario)
 			{
-				foreach(InventoryItems heldItem in inventario.heldItems)
+				foreach(ItemsChecklist neededItem in itemsToCheck)
 				{
-					if(neededItem.itemType == heldItem.itemType)
+					foreach(InventoryItems heldItem in inventario.heldItems)
 					{
-						neededItem.hasItem = true;
+						if(neededItem.itemType == heldItem.itemType)
+						{
+							neededItem.hasItem = true;
+						}
 					}
 				}
 			}
