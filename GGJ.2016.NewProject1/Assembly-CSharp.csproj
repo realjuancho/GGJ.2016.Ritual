@@ -45,6 +45,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\ButtonMenuAction.cs" />
      <Compile Include="Assets\CanvasFader.cs" />
      <Compile Include="Assets\InventoryAction.cs" />
      <Compile Include="Assets\ItemLibrary.cs" />
@@ -69,6 +70,7 @@
      <Compile Include="Assets\Scripts\PlatformerCharacter2D.cs" />
      <Compile Include="Assets\Scripts\Portal.cs" />
      <Compile Include="Assets\Scripts\Restarter.cs" />
+     <None Include="Assets\Fonts\she_always_walks_alone\READ ME-WALKSALONE.txt" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity_5_0/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
