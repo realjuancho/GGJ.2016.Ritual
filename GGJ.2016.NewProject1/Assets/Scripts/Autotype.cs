@@ -7,6 +7,12 @@ public class AutoType : MonoBehaviour {
 	public float letterPause = 0.2f;
 	public AudioClip sound;
 
+<<<<<<< HEAD
+=======
+	public static void writeText(string text ){
+		//instance.StartCoroutine(TypeText("Hola soy un Text"));
+	}
+>>>>>>> 813c2c1602342c05a8a635c47f6d00006b3a6b49
 	void Start () {
 		writeText("Hola soy un Texto");
 	}

@@ -1,9 +1,10 @@
 fileFormatVersion: 2
 guid: 522ab51435832eb45b3dc9390821343a
-timeCreated: 1454202327
+timeCreated: 1454209995
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: chancla_0
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -30,26 +31,44 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
-    wrapMode: -1
-  nPOTScale: 1
+    wrapMode: 1
+  nPOTScale: 0
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 100
-  alphaIsTransparency: 0
-  textureType: -1
+  spritePixelsToUnits: 10
+  alphaIsTransparency: 1
+  textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: chancla_0
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 118
+        width: 37
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4.5, y: 17.5}
+        - {x: -18.5, y: 1.5}
+        - {x: -18.5, y: -17.5}
+        - {x: 7.5, y: -17.5}
+        - {x: 18.5, y: -6.5}
+        - {x: 18.5, y: 16.5}
+        - {x: 17.5, y: 17.5}
     outline: []
   spritePackingTag: 
   userData: 

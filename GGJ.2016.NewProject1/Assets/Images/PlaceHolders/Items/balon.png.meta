@@ -1,9 +1,10 @@
 fileFormatVersion: 2
 guid: c18faa0c75908454a9bab4ff00df77d0
-timeCreated: 1454202327
+timeCreated: 1454209162
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: balon_0
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -30,26 +31,45 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
-    wrapMode: -1
-  nPOTScale: 1
+    wrapMode: 1
+  nPOTScale: 0
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 100
-  alphaIsTransparency: 0
-  textureType: -1
+  spritePixelsToUnits: 10
+  alphaIsTransparency: 1
+  textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: balon_0
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 172
+        width: 57
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16.5, y: 27.5}
+        - {x: -18.5, y: 27.5}
+        - {x: -28.5, y: 23.5}
+        - {x: -28.5, y: -27.5}
+        - {x: 18.5, y: -27.5}
+        - {x: 26.5, y: -22.5}
+        - {x: 27.5, y: -16.5}
+        - {x: 27.5, y: 19.5}
     outline: []
   spritePackingTag: 
   userData: 

@@ -1,9 +1,10 @@
 fileFormatVersion: 2
 guid: 493316525a6d82744a4dd058a367e9d7
-timeCreated: 1454202327
+timeCreated: 1454210628
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: refri_0
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -30,26 +31,44 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
-    wrapMode: -1
-  nPOTScale: 1
+    wrapMode: 1
+  nPOTScale: 0
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 100
-  alphaIsTransparency: 0
-  textureType: -1
+  spritePixelsToUnits: 10
+  alphaIsTransparency: 1
+  textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: refri_0
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 8
+        width: 132
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -65, y: 117}
+        - {x: -66, y: 116}
+        - {x: -66, y: -117}
+        - {x: 64, y: -117}
+        - {x: 66, y: -115}
+        - {x: 66, y: 115}
+        - {x: 64, y: 117}
     outline: []
   spritePackingTag: 
   userData: 
