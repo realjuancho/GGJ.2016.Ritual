@@ -4,6 +4,7 @@ using System.Collections;
 public class Portal : MonoBehaviour {
 	
 	public int code;
+	public float vDirection;
 	float time2Wait = 0f;
 	public GameObject player;
 	// Update is called once per frame
@@ -12,7 +13,7 @@ public class Portal : MonoBehaviour {
 			time2Wait -= Time.deltaTime;
 	}
 	void OnTriggerStay2D(Collider2D col) {
-		if (col.gameObject.tag == "Player" && time2Wait <= 0f && (Input.GetKey (KeyCode.W) || Input.GetKey(KeyCode.UpArrow))) {
+		if (col.gameObject.tag == "Player" && time2Wait <= 0f && Input.GetAxis ("Vertical") >= vDirection) {
 			Debug.Log ("Tocado");
 			foreach (Portal port in FindObjectsOfType<Portal>()) {
 				if (port.code == code && port != this) {
