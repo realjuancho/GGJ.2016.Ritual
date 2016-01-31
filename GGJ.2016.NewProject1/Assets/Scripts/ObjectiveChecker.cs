@@ -10,6 +10,13 @@ public class ObjectiveChecker : MonoBehaviour {
 
 	public bool IsCurrentObjective;
 	public bool ObjectiveCompleted = false;
+	public WinGame myParticleSystem;
+
+	void Start()
+	{
+		myParticleSystem = GetComponentInChildren<WinGame>();
+
+	}
 
 
 	void Update()
@@ -28,6 +35,7 @@ public class ObjectiveChecker : MonoBehaviour {
 				}
 			}
 			ObjectiveCompleted= tmpObjectiveCompleted;
+			if(ObjectiveCompleted) myParticleSystem.ganar = true;
 		}
 	}
 

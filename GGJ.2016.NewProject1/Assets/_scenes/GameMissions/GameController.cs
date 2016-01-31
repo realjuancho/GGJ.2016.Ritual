@@ -12,7 +12,8 @@ public class GameController : MonoBehaviour {
 
 
 
-		TryAgainPanel tryAgainPanel;
+	TryAgainPanel tryAgainPanel;
+	SuccessPanel successPanel;
 
 	void Start()
 	{
@@ -20,6 +21,9 @@ public class GameController : MonoBehaviour {
 		ObjectiveCheckers = GameObject.FindObjectsOfType<ObjectiveChecker>();
 		tryAgainPanel  = GameObject.FindObjectOfType<TryAgainPanel>();
 		tryAgainPanel.gameObject.SetActive(false);
+
+		successPanel = GameObject.FindObjectOfType<SuccessPanel>();
+		successPanel.gameObject.SetActive(false);
 	}
 
 	void Update()
@@ -38,6 +42,8 @@ public class GameController : MonoBehaviour {
 
 		CheckObjectives();
 
+		if(allObjectivesDone)
+			ShowSuccessPanel();
 
 	}
 
@@ -86,6 +92,14 @@ public class GameController : MonoBehaviour {
 		Animator animatorController =  tryAgainPanel.GetComponent<Animator>();
 		animatorController.SetTrigger(Hash.AnimationParameters.tryAgainPanelShow);
 
+
+	}
+
+	void ShowSuccessPanel()
+	{
+		successPanel.gameObject.SetActive(true);
+		Animator animatorController =  successPanel.GetComponent<Animator>();
+		animatorController.SetTrigger(Hash.AnimationParameters.successPanelShow);
 
 	}
 }

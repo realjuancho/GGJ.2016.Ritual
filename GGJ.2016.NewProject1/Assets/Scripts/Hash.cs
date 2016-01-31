@@ -40,7 +40,10 @@ public class Hash : MonoBehaviour {
 		public static string pressStart = "PressStart";
 
 		public static string tryAgainPanelShow = "TryAgainPanelShow";
+
+		public static string successPanelShow = "LevelSuccess";
 	}
+
 
 	public static class Tags
 	{
