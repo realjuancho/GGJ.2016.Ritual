@@ -12,7 +12,7 @@ public class Portal : MonoBehaviour {
 			time2Wait -= Time.deltaTime;
 	}
 	void OnTriggerStay2D(Collider2D col) {
-		if (col.gameObject.tag == "Player" && time2Wait <= 0f && Input.GetKey (KeyCode.W)) {
+		if (col.gameObject.tag == "Player" && time2Wait <= 0f && (Input.GetKey (KeyCode.W) || Input.GetKey(KeyCode.UpArrow))) {
 			Debug.Log ("Tocado");
 			foreach (Portal port in FindObjectsOfType<Portal>()) {
 				if (port.code == code && port != this) {

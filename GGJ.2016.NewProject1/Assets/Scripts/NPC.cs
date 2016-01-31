@@ -24,6 +24,9 @@ public class NPC : MonoBehaviour {
 	public NPCTargetPoints posicionesObjetivo;
 	public Hash.LocationNames myLocation;
 	public bool arrivedToTarget;
+	public GameObject sprite;
+	public Animator anim;
+	private Vector3 oriScale;
 
 	//Campo de visión del NPC 
 	//TODO: Añadir Atributo RequiredComponent
@@ -36,7 +39,7 @@ public class NPC : MonoBehaviour {
 	void Start ()
 	{
 		//Encuentra componentes para hacer flip del NPC
-
+		oriScale = sprite.transform.localScale;
 		NPCVisionCone visionCone = GetComponentInChildren<NPCVisionCone>();
 
 		visionFieldBoxCollider2D = visionCone.gameObject.GetComponent<BoxCollider2D>();
@@ -61,7 +64,6 @@ public class NPC : MonoBehaviour {
 
 	void Update ()
 	{
-	
 			NPCTarget posicionObjetivo = posicionesObjetivo.GetCurrentNPCTarget();
 
 			//Si encuentra una posición de objetivo
@@ -69,23 +71,23 @@ public class NPC : MonoBehaviour {
 			{
 
 				//Voltea a ver la posicion de objetivo
-				if(posicionObjetivo.transform.position.x > transform.position.x) 
-					currentlyLooking = LookingDirection.Right;
-				else 
-					currentlyLooking = LookingDirection.Left;
-
+			if (posicionObjetivo.transform.position.x > transform.position.x) {
+				currentlyLooking = LookingDirection.Right;
+			} else { 
+				currentlyLooking = LookingDirection.Left;
+			}
 				SwitchFaces();
 
 				if(!distracted)
 				{
 					transform.position = Vector2.Lerp(transform.position, posicionObjetivo.transform.position, Time.deltaTime * NPCspeed);
-
 					Vector3 distancia = posicionObjetivo.transform.position - transform.position;
 
 					if(distancia.magnitude < 0.01f)
 					{
 						transform.position = posicionObjetivo.transform.position;
 						arrivedToTarget = true;
+						anim.SetBool ("moving", false);
 						distracted = posicionObjetivo.IsDistractor;
 						timeToDistract = posicionObjetivo.DistractorTime;
 					}
@@ -103,6 +105,7 @@ public class NPC : MonoBehaviour {
 						distracted = false;
 						timeSinceDistracted = 0.0f;
 						timeToDistract = 0.0f;
+						anim.SetBool("moving", true);
 					}
 				}
 
@@ -114,8 +117,9 @@ public class NPC : MonoBehaviour {
 				timeSinceCurrentlyLooking += Time.deltaTime;
 				if(timeSinceCurrentlyLooking > turningTime)
 				{
-					if(currentlyLooking == LookingDirection.Left) currentlyLooking = LookingDirection.Right;
-					else currentlyLooking = LookingDirection.Left;
+				if (currentlyLooking == LookingDirection.Left) {
+					currentlyLooking = LookingDirection.Right;
+				}
 
 					timeSinceCurrentlyLooking = 0.0f;
 					Debug.Log("Now Turn " + currentlyLooking);
@@ -135,18 +139,24 @@ public class NPC : MonoBehaviour {
 
 	void SwitchFaces()
 	{
-		if(currentlyLooking == LookingDirection.Right) 
-				{
-					spriteRenderer.flipX = flipX;
-					visionFieldBoxCollider2D.offset = new Vector2(visionFieldOffsetX,0);
+		if(currentlyLooking == LookingDirection.Right) {
+			SwitchFaceTo (true);
 				}
 				else {
-					spriteRenderer.flipX = !flipX;
-					visionFieldBoxCollider2D.offset = new Vector2(visionFieldOffsetX *-1,0);
+			SwitchFaceTo (false);
 				}
 					
 	}
-
-
-
+	void SwitchFaceTo(bool right) {
+		Vector3 scale = sprite.transform.localScale;
+		if (right) {
+			spriteRenderer.flipX = !flipX;
+			visionFieldBoxCollider2D.offset = new Vector2 (visionFieldOffsetX * -1, 0);
+			sprite.transform.localScale = new Vector3 (-oriScale.x, oriScale.y, oriScale.z);
+		} else {
+			spriteRenderer.flipX = flipX;
+			visionFieldBoxCollider2D.offset = new Vector2 (visionFieldOffsetX, 0);
+			sprite.transform.localScale = new Vector3 (oriScale.x, oriScale.y, oriScale.z);
+		}
+	}
 }

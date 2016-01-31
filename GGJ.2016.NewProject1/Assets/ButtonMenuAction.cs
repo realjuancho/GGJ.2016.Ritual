@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 using System.Collections;
+
 
 public class ButtonMenuAction : MonoBehaviour {
 
@@ -21,4 +23,11 @@ public class ButtonMenuAction : MonoBehaviour {
 		animController.SetTrigger(Hash.AnimationParameters.pressStart);
 
 	}
+
+	public void StartGame()
+	{
+		SceneManager.LoadScene("Scene1");
+
+	}
+
 }

@@ -6,17 +6,17 @@ public class AutoType : MonoBehaviour {
 
 	public float letterPause = 0.2f;
 	public AudioClip sound;
-	Text textComp;
-	static public AutoType instance; 
 
 	public static void writeText(string text ){
 		//instance.StartCoroutine(TypeText("Hola soy un Text"));
 	}
 	void Start () {
-		instance = this;
 		writeText("Hola soy un Texto");
 	}
 
+	//void writeText(string text ){
+	//	StartCoroutine(TypeText(text));
+	//}
 	IEnumerator TypeText (string message) {
 		GetComponent<Text>().text = "";
 		foreach (char letter in message.ToCharArray()) {
