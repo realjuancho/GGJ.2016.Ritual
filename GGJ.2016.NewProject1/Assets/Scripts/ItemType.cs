@@ -19,16 +19,19 @@ public class ItemType : MonoBehaviour {
 
 	}
 	void Update() {
-		if (collidingWithAbuela && isPickUpable && Input.GetAxis("Use") == 1) {
-			animAbuela = GameObject.FindWithTag ("playerSprite").GetComponent<Animator>();
-			animAbuela.SetBool ("Crouch", true);
-			bool b = inventory.AddToInventory(itemType, imageSprite);
-			//TODO:
-			if (b)
-			{
-				AudioSource.PlayClipAtPoint(audioClipEffect , Vector3.zero); 
-				Destroy(gameObject);
+		animAbuela = GameObject.Find("AbuelaSprite").GetComponent<Animator>();
+		if (Input.GetAxis ("Use") == 1) {
+			animAbuela.SetBool("Crouch", true);
+			if (collidingWithAbuela && isPickUpable && Input.GetAxis ("Use") == 1) {
+				bool b = inventory.AddToInventory (itemType, imageSprite);
+				//TODO:
+				if (b) {
+					AudioSource.PlayClipAtPoint (audioClipEffect, Vector3.zero); 
+					Destroy (gameObject);
+				}
 			}
+		} else {
+			animAbuela.SetBool("Crouch", false);
 		}
 	}
 
